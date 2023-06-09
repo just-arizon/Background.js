@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans',sans-serif;
+            color: #fff;
+            
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+        }
+        div.container{
+            background-color: #252525;
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: aqua; */
+            min-height: 100vh;
+        }
+        ul{
+            display: flex;
+            gap: 2rem;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .showcase{
+            background-color: #252525;
+            padding: 7rem;
+            border-radius: 10px;
+        }
+        div.btn{
+            display: flex;
+            justify-content: center;
+            margin-top: 0.7rem;
+        }
+        button {
+  border: none;
+  outline: none;
+  background-color: #6c5ce7;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px #a29bfe;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">Color Flipper</div>
+            <ul>
+                <li><button><a href="">Simple</a></button></li>
+                <li><button><a href="">Hex</a></button</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main>
+        <div class="showcase">
+            <div class="display-output">
+                <h2>Background Color: <span class="outcome-value"></span></h2>
+            </div>
+            <div class="btn">
+                <button class="flip-btn">Flip</button>
+            </div>
+        </div>
+    </main>
+    <!-- script -->
+    <script src="app.js"></script>
+</body>
+</html>
