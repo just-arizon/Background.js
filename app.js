@@ -1,11 +1,11 @@
-const color = ["#00b894","#0984e3","#ff7675","#fdcb6e","#81ecec","#3B3B98","#182C61","#58B19F","#FD7272","#6D214F","#808e9b"];
+const color = ["rgb(0, 184, 148)","rgb(9, 132, 227)","rgb(255, 118, 117)","rgb(253, 203, 110)","rgb(129, 236, 236)","rgb(59, 59, 152)","rgb(24, 44, 97)","rgb(88, 177, 159)","rgb(253, 114, 114)","rgb(109, 33, 79)","rgb(128, 142, 155)"];
 const btn = document.querySelector(".flip-btn");
 const output = document.querySelector(".outcome-value");
 
 btn.addEventListener("click", function(){
     
     const randomNumber = getRandomNumber();
-    console.log(randomNumber)
+    // console.log(randomNumber) 
 
     document.body.style.backgroundColor = color[randomNumber];
     output.textContent = color[randomNumber];
